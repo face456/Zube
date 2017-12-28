@@ -12,9 +12,11 @@
 		8B894DAE1FF54CB6002A6A33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B894DAC1FF54CB6002A6A33 /* Main.storyboard */; };
 		8B894DB01FF54CB6002A6A33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B894DAF1FF54CB6002A6A33 /* Assets.xcassets */; };
 		8B894DB31FF54CB6002A6A33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B894DB11FF54CB6002A6A33 /* LaunchScreen.storyboard */; };
+		F837C7AEEAF754B25B3981CB /* Pods_Zube.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9EA29C917A07A06DA59CCE /* Pods_Zube.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		230E501F667D75A2D8345114 /* Pods-Zube.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zube.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zube/Pods-Zube.debug.xcconfig"; sourceTree = "<group>"; };
 		8B894DA51FF54CB6002A6A33 /* Zube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B894DA81FF54CB6002A6A33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B894DAA1FF54CB6002A6A33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		8B894DAF1FF54CB6002A6A33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B894DB21FF54CB6002A6A33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B894DB41FF54CB6002A6A33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F9EA29C917A07A06DA59CCE /* Pods_Zube.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zube.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8581605B8E62A8246D7C100 /* Pods-Zube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zube.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zube/Pods-Zube.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F837C7AEEAF754B25B3981CB /* Pods_Zube.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		237FC4B01EC05107226989A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F9EA29C917A07A06DA59CCE /* Pods_Zube.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8B894D9C1FF54CB6002A6A33 = {
 			isa = PBXGroup;
 			children = (
 				8B894DA71FF54CB6002A6A33 /* Zube */,
 				8B894DA61FF54CB6002A6A33 /* Products */,
+				EC1908E3D2AF4BA77BB981F5 /* Pods */,
+				237FC4B01EC05107226989A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = Zube;
 			sourceTree = "<group>";
 		};
+		EC1908E3D2AF4BA77BB981F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				230E501F667D75A2D8345114 /* Pods-Zube.debug.xcconfig */,
+				C8581605B8E62A8246D7C100 /* Pods-Zube.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B894DB71FF54CB6002A6A33 /* Build configuration list for PBXNativeTarget "Zube" */;
 			buildPhases = (
+				F94559FAD409F76678FE7155 /* [CP] Check Pods Manifest.lock */,
 				8B894DA11FF54CB6002A6A33 /* Sources */,
 				8B894DA21FF54CB6002A6A33 /* Frameworks */,
 				8B894DA31FF54CB6002A6A33 /* Resources */,
+				2A6FAF3E565278AF64A78531 /* [CP] Embed Pods Frameworks */,
+				8A7442551584723B2E68794E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A6FAF3E565278AF64A78531 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zube/Pods-Zube-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A7442551584723B2E68794E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zube/Pods-Zube-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F94559FAD409F76678FE7155 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8B894DA11FF54CB6002A6A33 /* Sources */ = {
@@ -272,6 +347,7 @@
 		};
 		8B894DB81FF54CB6002A6A33 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 230E501F667D75A2D8345114 /* Pods-Zube.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +363,7 @@
 		};
 		8B894DB91FF54CB6002A6A33 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8581605B8E62A8246D7C100 /* Pods-Zube.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
