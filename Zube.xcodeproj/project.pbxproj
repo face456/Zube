@@ -12,6 +12,9 @@
 		8B894DAE1FF54CB6002A6A33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B894DAC1FF54CB6002A6A33 /* Main.storyboard */; };
 		8B894DB01FF54CB6002A6A33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B894DAF1FF54CB6002A6A33 /* Assets.xcassets */; };
 		8B894DB31FF54CB6002A6A33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B894DB11FF54CB6002A6A33 /* LaunchScreen.storyboard */; };
+		8B894DC11FF54F11002A6A33 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B894DBF1FF54F11002A6A33 /* SWRevealViewController.m */; };
+		8B894DC31FF54F3A002A6A33 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B894DC21FF54F3A002A6A33 /* ChatVC.swift */; };
+		8B894DC61FF54F4C002A6A33 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B894DC51FF54F4C002A6A33 /* ChannelVC.swift */; };
 		F837C7AEEAF754B25B3981CB /* Pods_Zube.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9EA29C917A07A06DA59CCE /* Pods_Zube.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +27,11 @@
 		8B894DAF1FF54CB6002A6A33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B894DB21FF54CB6002A6A33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B894DB41FF54CB6002A6A33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B894DBE1FF54F10002A6A33 /* Zube-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Zube-Bridging-Header.h"; sourceTree = "<group>"; };
+		8B894DBF1FF54F11002A6A33 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		8B894DC01FF54F11002A6A33 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		8B894DC21FF54F3A002A6A33 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		8B894DC51FF54F4C002A6A33 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		9F9EA29C917A07A06DA59CCE /* Pods_Zube.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zube.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8581605B8E62A8246D7C100 /* Pods-Zube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zube.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zube/Pods-Zube.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +77,10 @@
 		8B894DA71FF54CB6002A6A33 /* Zube */ = {
 			isa = PBXGroup;
 			children = (
+				8B894DBD1FF54EE6002A6A33 /* Model */,
+				8B894DBC1FF54EE1002A6A33 /* View */,
+				8B894DBB1FF54EDA002A6A33 /* Controller */,
+				8B894DBA1FF54ECD002A6A33 /* Supporting Files */,
 				8B894DA81FF54CB6002A6A33 /* AppDelegate.swift */,
 				8B894DAA1FF54CB6002A6A33 /* ViewController.swift */,
 				8B894DAC1FF54CB6002A6A33 /* Main.storyboard */,
@@ -77,6 +89,39 @@
 				8B894DB41FF54CB6002A6A33 /* Info.plist */,
 			);
 			path = Zube;
+			sourceTree = "<group>";
+		};
+		8B894DBA1FF54ECD002A6A33 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B894DC01FF54F11002A6A33 /* SWRevealViewController.h */,
+				8B894DBF1FF54F11002A6A33 /* SWRevealViewController.m */,
+				8B894DBE1FF54F10002A6A33 /* Zube-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8B894DBB1FF54EDA002A6A33 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8B894DC21FF54F3A002A6A33 /* ChatVC.swift */,
+				8B894DC51FF54F4C002A6A33 /* ChannelVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8B894DBC1FF54EE1002A6A33 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B894DBD1FF54EE6002A6A33 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		EC1908E3D2AF4BA77BB981F5 /* Pods */ = {
@@ -123,6 +168,7 @@
 				TargetAttributes = {
 					8B894DA41FF54CB6002A6A33 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -211,8 +257,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B894DC31FF54F3A002A6A33 /* ChatVC.swift in Sources */,
 				8B894DAB1FF54CB6002A6A33 /* ViewController.swift in Sources */,
 				8B894DA91FF54CB6002A6A33 /* AppDelegate.swift in Sources */,
+				8B894DC11FF54F11002A6A33 /* SWRevealViewController.m in Sources */,
+				8B894DC61FF54F4C002A6A33 /* ChannelVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,12 +399,15 @@
 			baseConfigurationReference = 230E501F667D75A2D8345114 /* Pods-Zube.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56TGDR57S5;
 				INFOPLIST_FILE = Zube/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rollindonkey.Zube;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Zube/Supporting Files/Zube-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,12 +418,14 @@
 			baseConfigurationReference = C8581605B8E62A8246D7C100 /* Pods-Zube.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56TGDR57S5;
 				INFOPLIST_FILE = Zube/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rollindonkey.Zube;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Zube/Supporting Files/Zube-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
