@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B36522C1FF900260003AE7D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B36522B1FF900260003AE7D /* Constants.swift */; };
+		8B36522E1FFBA39D0003AE7D /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B36522D1FFBA39D0003AE7D /* CreateAccountVC.swift */; };
 		8B4842B91FF7CF7000FCD6C1 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4842B81FF7CF7000FCD6C1 /* GradientView.swift */; };
 		8B894DA91FF54CB6002A6A33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B894DA81FF54CB6002A6A33 /* AppDelegate.swift */; };
-		8B894DAB1FF54CB6002A6A33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B894DAA1FF54CB6002A6A33 /* ViewController.swift */; };
+		8B894DAB1FF54CB6002A6A33 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B894DAA1FF54CB6002A6A33 /* LoginVC.swift */; };
 		8B894DAE1FF54CB6002A6A33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B894DAC1FF54CB6002A6A33 /* Main.storyboard */; };
 		8B894DB01FF54CB6002A6A33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B894DAF1FF54CB6002A6A33 /* Assets.xcassets */; };
 		8B894DB31FF54CB6002A6A33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B894DB11FF54CB6002A6A33 /* LaunchScreen.storyboard */; };
@@ -21,10 +23,12 @@
 
 /* Begin PBXFileReference section */
 		230E501F667D75A2D8345114 /* Pods-Zube.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zube.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zube/Pods-Zube.debug.xcconfig"; sourceTree = "<group>"; };
+		8B36522B1FF900260003AE7D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8B36522D1FFBA39D0003AE7D /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		8B4842B81FF7CF7000FCD6C1 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		8B894DA51FF54CB6002A6A33 /* Zube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B894DA81FF54CB6002A6A33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B894DAA1FF54CB6002A6A33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B894DAA1FF54CB6002A6A33 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		8B894DAD1FF54CB6002A6A33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B894DAF1FF54CB6002A6A33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B894DB21FF54CB6002A6A33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +62,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8B36522A1FF900110003AE7D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8B36522B1FF900260003AE7D /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		8B894D9C1FF54CB6002A6A33 = {
 			isa = PBXGroup;
 			children = (
@@ -79,12 +91,12 @@
 		8B894DA71FF54CB6002A6A33 /* Zube */ = {
 			isa = PBXGroup;
 			children = (
+				8B36522A1FF900110003AE7D /* Utilities */,
 				8B894DBD1FF54EE6002A6A33 /* Model */,
 				8B894DBC1FF54EE1002A6A33 /* View */,
 				8B894DBB1FF54EDA002A6A33 /* Controller */,
 				8B894DBA1FF54ECD002A6A33 /* Supporting Files */,
 				8B894DA81FF54CB6002A6A33 /* AppDelegate.swift */,
-				8B894DAA1FF54CB6002A6A33 /* ViewController.swift */,
 				8B894DAC1FF54CB6002A6A33 /* Main.storyboard */,
 				8B894DAF1FF54CB6002A6A33 /* Assets.xcassets */,
 				8B894DB11FF54CB6002A6A33 /* LaunchScreen.storyboard */,
@@ -108,6 +120,8 @@
 			children = (
 				8B894DC21FF54F3A002A6A33 /* ChatVC.swift */,
 				8B894DC51FF54F4C002A6A33 /* ChannelVC.swift */,
+				8B894DAA1FF54CB6002A6A33 /* LoginVC.swift */,
+				8B36522D1FFBA39D0003AE7D /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -261,9 +275,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B894DC31FF54F3A002A6A33 /* ChatVC.swift in Sources */,
-				8B894DAB1FF54CB6002A6A33 /* ViewController.swift in Sources */,
+				8B894DAB1FF54CB6002A6A33 /* LoginVC.swift in Sources */,
+				8B36522E1FFBA39D0003AE7D /* CreateAccountVC.swift in Sources */,
 				8B4842B91FF7CF7000FCD6C1 /* GradientView.swift in Sources */,
 				8B894DA91FF54CB6002A6A33 /* AppDelegate.swift in Sources */,
+				8B36522C1FF900260003AE7D /* Constants.swift in Sources */,
 				8B894DC11FF54F11002A6A33 /* SWRevealViewController.m in Sources */,
 				8B894DC61FF54F4C002A6A33 /* ChannelVC.swift in Sources */,
 			);
