@@ -10,6 +10,7 @@
 		8B36522C1FF900260003AE7D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B36522B1FF900260003AE7D /* Constants.swift */; };
 		8B36522E1FFBA39D0003AE7D /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B36522D1FFBA39D0003AE7D /* CreateAccountVC.swift */; };
 		8B3652311FFC2BAC0003AE7D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3652301FFC2BAC0003AE7D /* AuthService.swift */; };
+		8B3652331FFE477D0003AE7D /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3652321FFE477D0003AE7D /* RoundedButton.swift */; };
 		8B4842B91FF7CF7000FCD6C1 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4842B81FF7CF7000FCD6C1 /* GradientView.swift */; };
 		8B894DA91FF54CB6002A6A33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B894DA81FF54CB6002A6A33 /* AppDelegate.swift */; };
 		8B894DAB1FF54CB6002A6A33 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B894DAA1FF54CB6002A6A33 /* LoginVC.swift */; };
@@ -27,6 +28,7 @@
 		8B36522B1FF900260003AE7D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8B36522D1FFBA39D0003AE7D /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		8B3652301FFC2BAC0003AE7D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		8B3652321FFE477D0003AE7D /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		8B4842B81FF7CF7000FCD6C1 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		8B894DA51FF54CB6002A6A33 /* Zube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B894DA81FF54CB6002A6A33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				8B4842B81FF7CF7000FCD6C1 /* GradientView.swift */,
+				8B3652321FFE477D0003AE7D /* RoundedButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B894DC31FF54F3A002A6A33 /* ChatVC.swift in Sources */,
+				8B3652331FFE477D0003AE7D /* RoundedButton.swift in Sources */,
 				8B894DAB1FF54CB6002A6A33 /* LoginVC.swift in Sources */,
 				8B36522E1FFBA39D0003AE7D /* CreateAccountVC.swift in Sources */,
 				8B3652311FFC2BAC0003AE7D /* AuthService.swift in Sources */,
