@@ -20,6 +20,7 @@
 		8B894DC11FF54F11002A6A33 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B894DBF1FF54F11002A6A33 /* SWRevealViewController.m */; };
 		8B894DC31FF54F3A002A6A33 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B894DC21FF54F3A002A6A33 /* ChatVC.swift */; };
 		8B894DC61FF54F4C002A6A33 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B894DC51FF54F4C002A6A33 /* ChannelVC.swift */; };
+		8BD30E851FFEDF8F00DD049A /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD30E841FFEDF8F00DD049A /* UserDataService.swift */; };
 		F837C7AEEAF754B25B3981CB /* Pods_Zube.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9EA29C917A07A06DA59CCE /* Pods_Zube.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		8B894DC01FF54F11002A6A33 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		8B894DC21FF54F3A002A6A33 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		8B894DC51FF54F4C002A6A33 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		8BD30E841FFEDF8F00DD049A /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		9F9EA29C917A07A06DA59CCE /* Pods_Zube.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zube.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8581605B8E62A8246D7C100 /* Pods-Zube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zube.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zube/Pods-Zube.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				8B3652301FFC2BAC0003AE7D /* AuthService.swift */,
+				8BD30E841FFEDF8F00DD049A /* UserDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				8B894DC31FF54F3A002A6A33 /* ChatVC.swift in Sources */,
 				8B3652331FFE477D0003AE7D /* RoundedButton.swift in Sources */,
 				8B894DAB1FF54CB6002A6A33 /* LoginVC.swift in Sources */,
+				8BD30E851FFEDF8F00DD049A /* UserDataService.swift in Sources */,
 				8B36522E1FFBA39D0003AE7D /* CreateAccountVC.swift in Sources */,
 				8B3652311FFC2BAC0003AE7D /* AuthService.swift in Sources */,
 				8B4842B91FF7CF7000FCD6C1 /* GradientView.swift in Sources */,
