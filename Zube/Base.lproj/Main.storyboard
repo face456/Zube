@@ -81,6 +81,7 @@
                         <viewLayoutGuide key="safeArea" id="Y9r-Uq-onr"/>
                     </view>
                     <connections>
+                        <outlet property="channelNameLbl" destination="wGz-qr-Gxh" id="baK-vO-xCM"/>
                         <outlet property="menuBtn" destination="lWU-si-3B8" id="CjH-Yt-Ws6"/>
                     </connections>
                 </viewController>
@@ -111,6 +112,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ad-Tr-bGs">
                                 <rect key="frame" x="281" y="83" width="22" height="22"/>
                                 <state key="normal" image="addChannelButton"/>
+                                <connections>
+                                    <action selector="addChannelPressed:" destination="eCu-aN-kDG" eventType="touchUpInside" id="k8X-tN-Ddw"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="wQp-kL-LC5" customClass="CirlceImage" customModule="Zube" customModuleProvider="target">
                                 <rect key="frame" x="16" y="572" width="75" height="75"/>
@@ -123,7 +127,7 @@
                                 <rect key="frame" x="0.0" y="125" width="375" height="427"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="OI1-Sj-tpB">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="channelCell" id="OI1-Sj-tpB" customClass="ChannelCell" customModule="Zube" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OI1-Sj-tpB" id="yHM-AH-gIG">
@@ -144,6 +148,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="channelName" destination="vao-8t-s7q" id="DWa-tP-vwH"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -182,6 +189,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="gdh-Hl-8bC" id="f3E-8d-t40"/>
+                        <outlet property="tableView" destination="yMs-Yo-Ny7" id="QJd-n8-nz8"/>
                         <outlet property="userImg" destination="wQp-kL-LC5" id="sWD-24-ifH"/>
                         <segue destination="0Ac-o7-k5h" kind="show" identifier="toLogin" id="Az4-bk-FFI"/>
                     </connections>
@@ -527,7 +535,7 @@
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="oOe-Ma-NfE">
                                 <rect key="frame" x="107.5" y="28" width="160" height="29"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="160" id="Ggb-Xp-VHU"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="Ggb-Xp-VHU"/>
                                 </constraints>
                                 <segments>
                                     <segment title="Dark"/>
