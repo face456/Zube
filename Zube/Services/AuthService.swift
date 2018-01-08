@@ -71,10 +71,9 @@ class AuthService {
             "password": password
         ]
         
-        Alamofire.request(URL_LOGIN, method: .post, parameters: body, encoding: JSONEncoding.default, headers: HEADER).responseJSON { (response) in
+        Alamofire.request(URL_LOGIN, method: .post, parameters: body, encoding: JSONEncoding.default, headers: BEARER_HEADER).responseJSON { (response) in
             
             if response.result.error == nil {
-                
                 // MARK: Using Swifty JSON
                 guard let data = response.data else { return }
                 let json = JSON(data: data)
