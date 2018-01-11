@@ -52,7 +52,7 @@ class LoginVC: UIViewController {
     
     func setupView() {
         spinner.isHidden = true
-        usernametxt.attributedPlaceholder = NSAttributedString(string: "username", attributes: [NSAttributedStringKey.foregroundColor: zubePurplePlaceholder])
+        usernametxt.attributedPlaceholder = NSAttributedString(string: "email", attributes: [NSAttributedStringKey.foregroundColor: zubePurplePlaceholder])
         passwordtxt.attributedPlaceholder = NSAttributedString(string: "password", attributes: [NSAttributedStringKey.foregroundColor: zubePurplePlaceholder])
     }
 }
